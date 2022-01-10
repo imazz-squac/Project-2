@@ -7,17 +7,6 @@
 .sfdx/
 .localdevserver/
 deploy-options.json
-.husky/
-.vscode/
-config
-manifest
-scripts
-.eslintignore
-.forceignore
-.prettierignore
-.prettierrc
-jest.config.js
-package.json
 
 # LWC VSCode autocomplete
 **/lwc/jsconfig.json
