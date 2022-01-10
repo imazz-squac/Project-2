@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PageMaterial__c</fullName>
+    <externalId>false</externalId>
+    <label>Page Material</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>20# Bond</fullName>
+                <default>false</default>
+                <label>20# Bond</label>
+            </value>
+            <value>
+                <fullName>50# Offset</fullName>
+                <default>false</default>
+                <label>50# Offset</label>
+            </value>
+            <value>
+                <fullName>60# Offset</fullName>
+                <default>false</default>
+                <label>60# Offset</label>
+            </value>
+            <value>
+                <fullName>70# Offset</fullName>
+                <default>false</default>
+                <label>70# Offset</label>
+            </value>
+            <value>
+                <fullName>80# Gloss</fullName>
+                <default>false</default>
+                <label>80# Gloss</label>
+            </value>
+            <value>
+                <fullName>80# Silk</fullName>
+                <default>false</default>
+                <label>80# Silk</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
