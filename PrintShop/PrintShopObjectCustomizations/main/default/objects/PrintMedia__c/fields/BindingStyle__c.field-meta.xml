@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BindingStyle__c</fullName>
+    <externalId>false</externalId>
+    <label>Binding Style</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Loose-Leaf</fullName>
+                <default>false</default>
+                <label>Loose-Leaf</label>
+            </value>
+            <value>
+                <fullName>Perfect</fullName>
+                <default>false</default>
+                <label>Perfect</label>
+            </value>
+            <value>
+                <fullName>Sprial</fullName>
+                <default>false</default>
+                <label>Sprial</label>
+            </value>
+            <value>
+                <fullName>Comb</fullName>
+                <default>false</default>
+                <label>Comb</label>
+            </value>
+            <value>
+                <fullName>Post</fullName>
+                <default>false</default>
+                <label>Post</label>
+            </value>
+            <value>
+                <fullName>Case-Bound</fullName>
+                <default>false</default>
+                <label>Case-Bound</label>
+            </value>
+            <value>
+                <fullName>Saddle Stitch</fullName>
+                <default>false</default>
+                <label>Saddle Stitch</label>
+            </value>
+            <value>
+                <fullName>Stapled</fullName>
+                <default>false</default>
+                <label>Stapled</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

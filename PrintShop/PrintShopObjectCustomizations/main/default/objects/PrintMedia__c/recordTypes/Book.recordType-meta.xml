@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Book</fullName>
+    <active>true</active>
+    <label>Book</label>
+    <picklistValues>
+        <picklist>BindingStyle__c</picklist>
+        <values>
+            <fullName>Case-Bound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comb</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loose-Leaf</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perfect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Post</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sprial</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PageMaterial__c</picklist>
+        <values>
+            <fullName>20%23 Bond</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50%23 Offset</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60%23 Offset</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>70%23 Offset</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>80%23 Gloss</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>80%23 Silk</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PageSize__c</picklist>
+        <values>
+            <fullName>A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>
