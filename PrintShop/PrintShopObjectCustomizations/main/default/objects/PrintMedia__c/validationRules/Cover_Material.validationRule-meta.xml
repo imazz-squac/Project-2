@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cover_Material</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(RecordType.Name = &quot;Book&quot;, ISNULL( Cover_Material__c ) )</errorConditionFormula>
+    <errorDisplayField>Cover_Material__c</errorDisplayField>
+    <errorMessage>Cover Material is required for books</errorMessage>
+</ValidationRule>

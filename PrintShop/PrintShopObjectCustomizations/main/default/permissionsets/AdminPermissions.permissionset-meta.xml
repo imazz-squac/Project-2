@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <applicationVisibilities>
+        <application>Print_Shop</application>
+        <visible>true</visible>
+    </applicationVisibilities>
     <fieldPermissions>
         <editable>true</editable>
         <field>Material__c.Color__c</field>
@@ -18,6 +22,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>PrintMedia__c.Cover_Jacket__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>PrintMedia__c.Cover_Material__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
@@ -53,4 +62,12 @@
         <recordType>PrintMedia__c.Pamphlet</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
+    <tabSettings>
+        <tab>Material__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>PrintMedia__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
 </PermissionSet>

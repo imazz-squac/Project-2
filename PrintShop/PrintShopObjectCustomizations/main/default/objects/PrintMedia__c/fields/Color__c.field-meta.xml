@@ -3,7 +3,8 @@
     <fullName>Color__c</fullName>
     <defaultValue>false</defaultValue>
     <externalId>false</externalId>
-    <label>Color</label>
+    <inlineHelpText>Will this be printed in color?</inlineHelpText>
+    <label>Print Color</label>
     <trackTrending>false</trackTrending>
     <type>Checkbox</type>
 </CustomField>
