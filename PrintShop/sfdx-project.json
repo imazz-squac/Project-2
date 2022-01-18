@@ -19,6 +19,9 @@
             "package": "mdproj2",
             "versionName": "ver 0.1",
             "versionNumber": "0.1.0.NEXT",
+            "dependencies": [{
+                "package": "04t5f000000n6CzAAI"
+            }],
             "default": false
         }
     ],
