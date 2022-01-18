@@ -13,6 +13,13 @@
             "versionName": "ver 0.1",
             "versionNumber": "0.1.0.NEXT",
             "default": true
+        },
+        {
+            "path": "mdproj2",
+            "package": "mdproj2",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT",
+            "default": false
         }
     ],
     "name": "PrintShop",
@@ -22,7 +29,9 @@
     "packageAliases": {
         "PrintShopObjectCustomizations": "0Ho5f000000KzA1CAK",
         "PrintShopObjectCustomizations@0.1.0-1": "04t5f000000n29XAAQ",
-        "orderForm": "0Ho5f000000oMISCA2"
-        "PrintShopObjectCustomizations@0.1.0-2": "04t5f000000n6CzAAI"
+        "orderForm": "0Ho5f000000oMISCA2",
+        "PrintShopObjectCustomizations@0.1.0-2": "04t5f000000n6CzAAI",
+        "mdproj2": "0Ho5f000000GmuvCAC",
+        "mdproj2@0.1.0-1": "04t5f000000NoboAAC"
     }
 }
