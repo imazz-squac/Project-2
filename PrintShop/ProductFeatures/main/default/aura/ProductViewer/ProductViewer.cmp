@@ -1,0 +1,21 @@
+<aura:component implements="flexipage:availableForAllPageTypes" controller="ProductController">
+
+    <aura:attribute name="productList" type="List" />
+    <aura:attribute name="description" type="Object" access="private" />
+    <aura:attribute name="productMap" type="Map" access="private" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    <lightning:card title="Services">
+        <div class="slds-grid">
+            <div class="slds-col slds-size_1-of-2">
+                <aura:if isTrue="{!v.productList != null}">
+                    <c:productTab products="{!v.productList}" onselect="{!c.handleSelect}"/>
+                </aura:if>
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <p>{!v.description}</p>
+            </div>
+        </div>
+    </lightning:card>
+    
+</aura:component>
