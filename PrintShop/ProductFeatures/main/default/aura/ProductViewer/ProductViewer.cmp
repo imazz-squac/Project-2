@@ -1,4 +1,4 @@
-<aura:component implements="flexipage:availableForAllPageTypes" controller="ProductController">
+<aura:component implements="forceCommunity:availableForAllPageTypes" controller="ProductController">
 
     <aura:attribute name="productList" type="List" />
     <aura:attribute name="description" type="Object" access="private" />
