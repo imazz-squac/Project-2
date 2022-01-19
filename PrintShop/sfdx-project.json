@@ -12,28 +12,34 @@
             "package": "ProductFeatures",
             "versionName": "ver 0.1",
             "versionNumber": "0.1.0.NEXT",
-           "dependencies": [
-                {"package": "04t5f000000n6CzAAI"}
+            "dependencies": [
+                {
+                    "package": "04t5f000000n6KfAAI"
+                }
             ],
             "default": false
-         },
-         {
+        },
+        {
             "path": "listMedia",
             "package": "listMedia",
             "versionName": "ver 0.1",
             "versionNumber": "0.1.0.NEXT",
             "dependencies": [
-                {"package": "04t5f000000n6CzAAI"}
+                {
+                    "package": "04t5f000000n6KfAAI"
+                }
             ],
             "default": false
-         },
-         {
+        },
+        {
             "path": "orderForm",
             "package": "orderForm",
             "versionName": "ver 0.1",
             "versionNumber": "0.1.0.NEXT",
             "dependencies": [
-                {"package":"04t5f000000n6CzAAI"}
+                {
+                    "package": "04t5f000000n6KfAAI"
+                }
             ],
             "default": true
         },
@@ -42,9 +48,11 @@
             "package": "mdproj2",
             "versionName": "ver 0.1",
             "versionNumber": "0.1.0.NEXT",
-            "dependencies": [{
-                "package": "04t5f000000n6CzAAI"
-            }],
+            "dependencies": [
+                {
+                    "package": "04t5f000000n6KfAAI"
+                }
+            ],
             "default": false
         }
     ],
@@ -57,10 +65,12 @@
         "PrintShopObjectCustomizations@0.1.0-1": "04t5f000000n29XAAQ",
         "PrintShopObjectCustomizations@0.1.0-2": "04t5f000000n6CzAAI",
         "ProductFeatures": "0Ho5f000000KzAkCAK",
-        "ProductFeatures@0.1.0-1": "04t5f000000n6KBAAY"
+        "ProductFeatures@0.1.0-1": "04t5f000000n6KBAAY",
         "listMedia": "0Ho5f000000blgQCAQ",
         "orderForm": "0Ho5f000000oMISCA2",
         "mdproj2": "0Ho5f000000GmuvCAC",
-        "mdproj2@0.1.0-1": "04t5f000000NoboAAC"
+        "mdproj2@0.1.0-1": "04t5f000000NoboAAC",
+        "PrintShopObjectCustomizations@0.1.0-3": "04t5f000000n6KfAAI",
+        "ProductFeatures@0.1.0-2": "04t5f000000n6KkAAI"
     }
 }
