@@ -9,8 +9,7 @@
     </lightning:select>
     
     <aura:if isTrue="{!v.recordId != null}">
-        <c:printMediaOrderForm  recordTypeId="{!v.recordId}"/>
-        <c:orderForm/>
+        <c:printMediaOrderForm  recordTypeId="{!v.recordId}" aura:id="mediaForm"/>
     </aura:if>
    
     
