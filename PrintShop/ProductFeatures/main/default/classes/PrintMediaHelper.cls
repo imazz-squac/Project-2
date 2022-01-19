@@ -9,7 +9,7 @@ public with sharing class PrintMediaHelper {
         update media;
     }
 
-    private void calculateCostPerCopy(PrintMedia__c media){
+    private static void calculateCostPerCopy(PrintMedia__c media){
         // Cost for page size, per page
         // cost for page material, per page
         // cost for color print per page
@@ -29,12 +29,14 @@ public with sharing class PrintMediaHelper {
         media.Customization_Costs__c = totalCost;
     }
 
-    private Decimal getPageTypeCost(media){
+    private static Decimal getPageTypeCost(PrintMedia__c media){
         String pageType = media.PageMaterial__c;
 
         if(pageType.contains('Bond')) return 0;
         if(pageType.contains('Offset')) return MaterialCosts.OFFSET_COST;
         if(pageType.contains('Gloss')) return MaterialCosts.GLOSS_COST;
         if(pageType.contains('Silk')) return MaterialCosts.SILK_COST;
+
+        return 0;
     }
 }

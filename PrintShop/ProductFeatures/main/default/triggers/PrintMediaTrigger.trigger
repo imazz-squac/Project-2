@@ -4,10 +4,10 @@ trigger PrintMediaTrigger on PrintMedia__c (before insert, before update, before
         when BEFORE_UPDATE {}
         when BEFORE_DELETE {}
         when AFTER_INSERT {
-            AccountHandler.addContacts(trigger.new);
+            PrintMediaHelper.calculateCosts(trigger.new);
         }
         when AFTER_UPDATE {
-            AccountHandler.addContacts(trigger.new);
+            PrintMediaHelper.calculateCosts(trigger.new);
         }
         when AFTER_DELETE {}
         when AFTER_UNDELETE {}
