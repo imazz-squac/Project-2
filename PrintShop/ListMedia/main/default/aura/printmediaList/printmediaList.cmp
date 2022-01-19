@@ -2,12 +2,12 @@
     <!-- Handle component initialization in a client-side controller -->
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
     
-    <!-- Dynamically load the list of contacts -->
+    <!-- Dynamically load the list of print media -->
     <aura:attribute name="printmedias" type="PrintMedia__c[]"/>
     <aura:attribute name="printmediaList" type="PrintMedia__c[]"/>
     <aura:attribute name="totalPrintMedias" type="Integer"/>
     
-    <!-- Page header with a counter that displays total number of contacts -->
+    <!-- Page header with a counter that displays total number of print media -->
     <div class="slds-page-header slds-page-header_object-home">
         <lightning:layout>
             <lightning:layoutItem>
@@ -46,7 +46,7 @@
     
             <!-- Iterate over the list of print media and display them -->
             <aura:iteration var="printmedia" items="{!v.printmedias}">
-                <!-- If you’re using a namespace, replace with myNamespace:contacts-->
+               
                 <c:printmedias printmedia="{!printmedia}"/>
             </aura:iteration>
         </lightning:layoutItem>
