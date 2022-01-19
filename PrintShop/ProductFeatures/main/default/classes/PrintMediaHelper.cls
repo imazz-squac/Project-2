@@ -5,8 +5,6 @@ public with sharing class PrintMediaHelper {
         for(PrintMedia__c pm : media){
             calculateCostPerCopy(pm);
         }
-
-        update media;
     }
 
     private static void calculateCostPerCopy(PrintMedia__c media){
