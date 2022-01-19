@@ -8,6 +8,16 @@
             "default": false
         },
         {
+            "path": "listMedia",
+            "package": "listMedia",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT",
+            "dependencies": [
+                {"package": "04t5f000000n6CzAAI"}
+            ],
+            "default": false
+         },
+         {
             "path": "orderForm",
             "package": "orderForm",
             "versionName": "ver 0.1",
@@ -32,6 +42,8 @@
     "packageAliases": {
         "PrintShopObjectCustomizations": "0Ho5f000000KzA1CAK",
         "PrintShopObjectCustomizations@0.1.0-1": "04t5f000000n29XAAQ",
+        "PrintShopObjectCustomizations@0.1.0-2": "04t5f000000n6CzAAI",
+        "listMedia": "0Ho5f000000blgQCAQ"
         "orderForm": "0Ho5f000000oMISCA2",
         "PrintShopObjectCustomizations@0.1.0-2": "04t5f000000n6CzAAI",
         "mdproj2": "0Ho5f000000GmuvCAC",

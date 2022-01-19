@@ -1,0 +1,54 @@
+<aura:component implements="force:appHostable" controller="PrintMediaController">
+    <!-- Handle component initialization in a client-side controller -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <!-- Dynamically load the list of print media -->
+    <aura:attribute name="printmedias" type="PrintMedia__c[]"/>
+    <aura:attribute name="printmediaList" type="PrintMedia__c[]"/>
+    <aura:attribute name="totalPrintMedias" type="Integer"/>
+    
+    <!-- Page header with a counter that displays total number of print media -->
+    <div class="slds-page-header slds-page-header_object-home">
+        <lightning:layout>
+            <lightning:layoutItem>
+                <lightning:icon iconName="custom:custom11" />
+            </lightning:layoutItem>
+            <lightning:layoutItem class="slds-m-left_small">
+                <p class="slds-text-title_caps slds-line-height_reset">Print Media</p>
+                <h1 class="slds-page-header__title slds-p-right_x-small">Print Media Viewer</h1>
+            </lightning:layoutItem>
+        </lightning:layout>
+    
+        <lightning:layout>
+            <lightning:layoutItem> <!--Maybe create a different field for company and/or book use instead of Binding style-->
+                <p class="slds-text-body_small">{!v.totalPrintMedias} Print Media • View Print Media Based on Binding Style</p>
+            </lightning:layoutItem>
+        </lightning:layout>
+    </div>
+    
+    <!-- Body with dropdown menu and list of various Print Media -->
+    <lightning:layout>
+        <lightning:layoutItem padding="horizontal-medium" >
+            <!-- Create a dropdown menu with options -->
+            <lightning:select aura:id="select" label="Binding Style" name="style" 
+                              onchange="{!c.handleSelect}" class="slds-m-bottom_medium">
+                <option value="">-- Select a Binding Style --</option>
+                <option value="Loose-Leaf" text="Loose-Leaf"/>
+                <option value="Perfect" text="Perfect"/>
+                <option value="Sprial" text="Sprial"/>
+                <option value="Comb" text="Comb"/>
+                <option value="Post" text="Post"/>
+                <option value="Case-Bound" text="Case-Bound"/>
+                <option value="Saddle Stitch" text="Saddle Stitch"/>
+                <option value="Stapled" text="Stapled"/>
+                <option value="All" text="All"/>
+            </lightning:select>
+    
+            <!-- Iterate over the list of print media and display them -->
+            <aura:iteration var="printmedia" items="{!v.printmedias}">
+               
+                <c:printmedias printmedia="{!printmedia}"/>
+            </aura:iteration>
+        </lightning:layoutItem>
+    </lightning:layout>
+</aura:component>
